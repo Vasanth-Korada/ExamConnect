@@ -1,0 +1,108 @@
+{
+  "project_info": {
+    "project_number": "1078043149313",
+    "firebase_url": "https://talent-connect-70ae6.firebaseio.com",
+    "project_id": "talent-connect-70ae6",
+    "storage_bucket": "talent-connect-70ae6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078043149313:android:bc8cee9e536a1084d76c00",
+        "android_client_info": {
+          "package_name": "com.example.talentconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078043149313-fjcbb3reqge5v6j7rki33srl3s75sp56.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.talentconnect",
+            "certificate_hash": "8cf2725ed643d700ea38c1190d8863423a3e92c9"
+          }
+        },
+        {
+          "client_id": "1078043149313-qllekb561osrtbp3o74k6g8cui743goe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp5DBKXLl6Dg4bM736HG7aLZhayrkaeBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078043149313-qllekb561osrtbp3o74k6g8cui743goe.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1078043149313-26nod1nkfrutsg93htpvkragfd61cu8p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vktech.talentConnect"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078043149313:android:abaa94829fdfa64bd76c00",
+        "android_client_info": {
+          "package_name": "com.vktech.talent_connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078043149313-n45qfjh0gebmllfartqndmdu0m1chkti.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vktech.talent_connect",
+            "certificate_hash": "8cf2725ed643d700ea38c1190d8863423a3e92c9"
+          }
+        },
+        {
+          "client_id": "1078043149313-ob8mdl2lkkhgtmf6okjbppphstq4dgfi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vktech.talent_connect",
+            "certificate_hash": "5220549358459ba5af7d95feb298bf2b7886e13a"
+          }
+        },
+        {
+          "client_id": "1078043149313-qllekb561osrtbp3o74k6g8cui743goe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp5DBKXLl6Dg4bM736HG7aLZhayrkaeBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078043149313-qllekb561osrtbp3o74k6g8cui743goe.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1078043149313-26nod1nkfrutsg93htpvkragfd61cu8p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vktech.talentConnect"
+              }
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-8559543128044506~8623465675"
+    }
+  ],
+  "configuration_version": "1"
+}

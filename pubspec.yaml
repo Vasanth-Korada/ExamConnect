@@ -1,0 +1,74 @@
+name: talent_connect
+description: Talent Connect. Unleash your skills.
+
+version: 1.0.1+18
+
+environment:
+  sdk: ">=2.5.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cloud_firestore: ^3.1.15
+  flutter_spinkit: "^4.1.2"
+  modal_progress_hud: ^0.1.3
+  google_sign_in: ^4.1.1
+  firebase_auth: ^3.3.18
+  #connectivity: ^0.3.0
+  connectivity_plus: ^2.3.0
+  shared_preferences: ^0.5.1+2
+  firebase_messaging: ^11.4.0
+  url_launcher:  ^6.1.2
+  audioplayers: ^0.20.1
+  confetti: ^0.5.2
+  share: ^0.6.3+5
+  firebase_admob: 
+  lottie: 
+  provider: ^6.0.2
+  scrollable_positioned_list: ^0.1.10
+  firebase_core: ^1.17.0
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/congratulations.mp3
+    - assets/nointernet.gif
+    - assets/tc_new_gif.gif
+    - assets/images/clip-sign-up.png
+    - assets/images/clip-log-out.png
+    - assets/images/google_logo.png
+    - assets/images/hugo-no-connection.png
+    - assets/images/whatsapp-icon.png
+    - assets/images/analysis.png
+    - assets/lotties/coin.json
+    - assets/lotties/activity.json
+    - assets/images/key-image.png
+    - assets/images/about-us.png
+    - assets/images/awesome.png
+    - assets/images/lightbulb.png
+    - assets/images/update_app.png
+    - assets/images/maintenance.png
+    - assets/images/new_logo.png
+
+
+  fonts:
+    - family: GoogleSansRegular
+      fonts:
+        - asset: assets/fonts/GoogleSansRegular.ttf
+    
+    - family: GoogleSansMedium
+      fonts:
+        - asset: assets/fonts/GoogleSansMedium.ttf
+
+        
+  
+
