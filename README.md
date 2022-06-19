@@ -14,6 +14,7 @@ Exam Connect Mobile App (For Students)
 9. Can View the answer key after the exam ends
 10. Authentication for Google Sign In
 11. Reward Coins on every exam taken
+12. Push Notification to communicate with the student
 
 ## Technologies Used
 1. Flutter - Mobile App
