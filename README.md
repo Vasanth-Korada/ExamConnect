@@ -1,16 +1,23 @@
-# talentconnect
 
-A new Flutter project.
+## Features
 
-## Getting Started
+Exam Connect Mobile App (For Students)
 
-This project is a starting point for a Flutter application.
+1. Monitor Ongoing and Upcoming Exams
+2. Automatic scheduling of exams
+3. Dynamic timer for exams
+4. Auto Submit when user closes the App
+5. Exam Result on Fly
+6. Reward Coins for scoring extra marks
+7. Can Redeem Coins to purchase attempts
+8. On the go announcements tab from the teachers
+9. Can View the answer key after the exam ends
+10. Authentication for Google Sign In
+11. Reward Coins on every exam taken
 
-A few resources to get you started if this is your first Flutter project:
+## Technologies Used
+1. Flutter - Mobile App
+2. Firebase - Backend
+3. Python & Linux - CRON Job
+4. Clean Architecture
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
