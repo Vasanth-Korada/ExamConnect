@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:talent_connect/helpers/crud.dart';
-import 'package:talent_connect/widgets/appbar.widget.dart';
-import 'package:talent_connect/widgets/streambuilder.widget.dart';
+import 'package:exam_connect/helpers/crud.dart';
+import 'package:exam_connect/widgets/appbar.widget.dart';
+import 'package:exam_connect/widgets/streambuilder.widget.dart';
 
 class AllArchivedContests extends StatefulWidget {
   final userObj;

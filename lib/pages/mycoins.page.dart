@@ -3,10 +3,10 @@ import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-import 'package:talent_connect/classes/UserModel.dart';
-import 'package:talent_connect/helpers/crud.dart';
-import 'package:talent_connect/widgets/appbar.widget.dart';
-import 'package:talent_connect/widgets/text-widget.dart';
+import 'package:exam_connect/classes/UserModel.dart';
+import 'package:exam_connect/helpers/crud.dart';
+import 'package:exam_connect/widgets/appbar.widget.dart';
+import 'package:exam_connect/widgets/text-widget.dart';
 
 class MyCoinsPage extends StatefulWidget {
   @override

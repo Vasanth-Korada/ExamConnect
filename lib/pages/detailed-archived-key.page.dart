@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:talent_connect/widgets/appbar.widget.dart';
-import 'package:talent_connect/widgets/text-widget.dart';
+import 'package:exam_connect/widgets/appbar.widget.dart';
+import 'package:exam_connect/widgets/text-widget.dart';
 
 class DetailedArchivedKeyPage extends StatelessWidget {
   String question = "";

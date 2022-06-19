@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
-import 'package:talent_connect/classes/UserModel.dart';
-import 'package:talent_connect/helpers/crud.dart';
-import 'package:talent_connect/helpers/loader.dart';
-import 'package:talent_connect/pages/intisplash-screen.page.dart';
-import 'package:talent_connect/widgets/tc_header.dart';
-import 'package:talent_connect/widgets/text-widget.dart';
+import 'package:exam_connect/classes/UserModel.dart';
+import 'package:exam_connect/helpers/crud.dart';
+import 'package:exam_connect/helpers/loader.dart';
+import 'package:exam_connect/pages/intisplash-screen.page.dart';
+import 'package:exam_connect/widgets/tc_header.dart';
+import 'package:exam_connect/widgets/text-widget.dart';
 import '../helpers/check-internet-connection.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../main.dart';
@@ -93,6 +93,12 @@ class _SignInState extends State<SignIn> {
 
   void autoLogIn() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
+
+    prefs.setString("id", "12");
+    prefs.setString("username", "Vasanth Korada");
+    prefs.setString("useremail", "vasanthkorada999@gmail.com");
+    prefs.setString("userphoto", "");
+
     final String id = prefs.getString('id');
     final String userId = prefs.getString('username');
     final String useremail = prefs.getString('useremail');
@@ -223,7 +229,9 @@ class _SignInState extends State<SignIn> {
         });
         _login();
       },
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4),side: BorderSide(color: Colors.grey)),
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(4),
+          side: BorderSide(color: Colors.grey)),
       highlightElevation: 0,
       child: Padding(
         padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),

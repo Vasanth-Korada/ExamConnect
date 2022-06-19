@@ -2,14 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
-import 'package:talent_connect/helpers/check-internet-connection.dart';
-import 'package:talent_connect/helpers/crud.dart';
-import 'package:talent_connect/helpers/loader.dart';
-import 'package:talent_connect/pages/result-page.dart';
-import 'package:talent_connect/widgets/appbar.widget.dart';
-import 'package:talent_connect/widgets/display-box.widget.dart';
-import 'package:talent_connect/widgets/exam-page-buttonbar.widget.dart';
-import 'package:talent_connect/widgets/text-widget.dart';
+import 'package:exam_connect/helpers/check-internet-connection.dart';
+import 'package:exam_connect/helpers/crud.dart';
+import 'package:exam_connect/helpers/loader.dart';
+import 'package:exam_connect/pages/result-page.dart';
+import 'package:exam_connect/widgets/appbar.widget.dart';
+import 'package:exam_connect/widgets/display-box.widget.dart';
+import 'package:exam_connect/widgets/exam-page-buttonbar.widget.dart';
+import 'package:exam_connect/widgets/text-widget.dart';
 import 'dart:async';
 import 'package:flutter/services.dart';
 
@@ -896,7 +896,7 @@ class _ResultSplashState extends State<ResultSplash> {
                   score: globalScore,
                 ))));
 
-    var assetsImage = new AssetImage('assets/tc_new_gif.gif');
+    var assetsImage = new AssetImage('assets/images/logo.png');
     var image = new Image(
       image: assetsImage,
     );

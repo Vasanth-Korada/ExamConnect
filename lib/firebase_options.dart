@@ -27,9 +27,15 @@ class DefaultFirebaseOptions {
       case TargetPlatform.macOS:
         return macos;
       case TargetPlatform.windows:
-        return windows;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.linux:
-        return linux;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for linux - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       default:
         throw UnsupportedError(
           'DefaultFirebaseOptions are not supported for this platform.',
@@ -38,68 +44,42 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCPEX4PeO7BtTiiHn4kB1Z23az0clTJJaQ',
-    appId: '1:1078043149313:web:f5fcf86eb9b0fc30d76c00',
-    messagingSenderId: '1078043149313',
-    projectId: 'talent-connect-70ae6',
-    authDomain: 'talent-connect-70ae6.firebaseapp.com',
-    databaseURL: 'https://talent-connect-70ae6.firebaseio.com',
-    storageBucket: 'talent-connect-70ae6.appspot.com',
-    measurementId: 'G-0W82F14PLF',
+    apiKey: 'AIzaSyAeFIzEypAo0B1WEl0TyDSm53buBFACfiw',
+    appId: '1:519638457474:web:9c603fea0bbf1e5753a89b',
+    messagingSenderId: '519638457474',
+    projectId: 'examconnect-da70a',
+    authDomain: 'examconnect-da70a.firebaseapp.com',
+    storageBucket: 'examconnect-da70a.appspot.com',
+    measurementId: 'G-SV61MSJJL4',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCp5DBKXLl6Dg4bM736HG7aLZhayrkaeBU',
-    appId: '1:1078043149313:android:bc8cee9e536a1084d76c00',
-    messagingSenderId: '1078043149313',
-    projectId: 'talent-connect-70ae6',
-    databaseURL: 'https://talent-connect-70ae6.firebaseio.com',
-    storageBucket: 'talent-connect-70ae6.appspot.com',
+    apiKey: 'AIzaSyCfedjXxtluJMIX9oJfQl3njvhoFi5LM6c',
+    appId: '1:519638457474:android:f2d512bdb810ad4c53a89b',
+    messagingSenderId: '519638457474',
+    projectId: 'examconnect-da70a',
+    storageBucket: 'examconnect-da70a.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCQWf_p8eqVgW4wSx8yz_G6p3HbJyucjw0',
-    appId: '1:1078043149313:ios:84fbdbae45255773d76c00',
-    messagingSenderId: '1078043149313',
-    projectId: 'talent-connect-70ae6',
-    databaseURL: 'https://talent-connect-70ae6.firebaseio.com',
-    storageBucket: 'talent-connect-70ae6.appspot.com',
-    androidClientId: '1078043149313-n45qfjh0gebmllfartqndmdu0m1chkti.apps.googleusercontent.com',
-    iosClientId: '1078043149313-6qsfjjtb5hnmt5mtltihnodgj5uqaqqn.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBPRKMKDQtrrkQSFlrndt6ENvPlFWgTrEs',
+    appId: '1:519638457474:ios:7af490a15037fcaf53a89b',
+    messagingSenderId: '519638457474',
+    projectId: 'examconnect-da70a',
+    storageBucket: 'examconnect-da70a.appspot.com',
+    androidClientId: '519638457474-qi6hfds3b99ftrh4vpre3krugscafkl0.apps.googleusercontent.com',
+    iosClientId: '519638457474-afgv2i6kgg1amth8h14gpo3ms2f9vsoo.apps.googleusercontent.com',
     iosBundleId: 'com.example.talentconnect',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCQWf_p8eqVgW4wSx8yz_G6p3HbJyucjw0',
-    appId: '1:1078043149313:ios:84fbdbae45255773d76c00',
-    messagingSenderId: '1078043149313',
-    projectId: 'talent-connect-70ae6',
-    databaseURL: 'https://talent-connect-70ae6.firebaseio.com',
-    storageBucket: 'talent-connect-70ae6.appspot.com',
-    androidClientId: '1078043149313-n45qfjh0gebmllfartqndmdu0m1chkti.apps.googleusercontent.com',
-    iosClientId: '1078043149313-6qsfjjtb5hnmt5mtltihnodgj5uqaqqn.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBPRKMKDQtrrkQSFlrndt6ENvPlFWgTrEs',
+    appId: '1:519638457474:ios:7af490a15037fcaf53a89b',
+    messagingSenderId: '519638457474',
+    projectId: 'examconnect-da70a',
+    storageBucket: 'examconnect-da70a.appspot.com',
+    androidClientId: '519638457474-qi6hfds3b99ftrh4vpre3krugscafkl0.apps.googleusercontent.com',
+    iosClientId: '519638457474-afgv2i6kgg1amth8h14gpo3ms2f9vsoo.apps.googleusercontent.com',
     iosBundleId: 'com.example.talentconnect',
-  );
-
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCPEX4PeO7BtTiiHn4kB1Z23az0clTJJaQ',
-    appId: '1:1078043149313:web:ff796991b771e8d7d76c00',
-    messagingSenderId: '1078043149313',
-    projectId: 'talent-connect-70ae6',
-    authDomain: 'talent-connect-70ae6.firebaseapp.com',
-    databaseURL: 'https://talent-connect-70ae6.firebaseio.com',
-    storageBucket: 'talent-connect-70ae6.appspot.com',
-    measurementId: 'G-H12XPTE6BL',
-  );
-
-  static const FirebaseOptions linux = FirebaseOptions(
-    apiKey: 'AIzaSyCPEX4PeO7BtTiiHn4kB1Z23az0clTJJaQ',
-    appId: '1:1078043149313:web:7ac24fcfd74dead9d76c00',
-    messagingSenderId: '1078043149313',
-    projectId: 'talent-connect-70ae6',
-    authDomain: 'talent-connect-70ae6.firebaseapp.com',
-    databaseURL: 'https://talent-connect-70ae6.firebaseio.com',
-    storageBucket: 'talent-connect-70ae6.appspot.com',
-    measurementId: 'G-WC8FRMTLPJ',
   );
 }

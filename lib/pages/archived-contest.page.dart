@@ -2,15 +2,15 @@ import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:talent_connect/classes/UserModel.dart';
-import 'package:talent_connect/helpers/ad_manager.dart';
-import 'package:talent_connect/helpers/crud.dart';
-import 'package:talent_connect/pages/detailed-archived-key.page.dart';
-import 'package:talent_connect/pages/mycoins.page.dart';
-import 'package:talent_connect/widgets/BlurFilter.dart';
-import 'package:talent_connect/widgets/appbar.widget.dart';
-import 'package:talent_connect/widgets/display-box.widget.dart';
-import 'package:talent_connect/widgets/text-widget.dart';
+import 'package:exam_connect/classes/UserModel.dart';
+import 'package:exam_connect/helpers/ad_manager.dart';
+import 'package:exam_connect/helpers/crud.dart';
+import 'package:exam_connect/pages/detailed-archived-key.page.dart';
+import 'package:exam_connect/pages/mycoins.page.dart';
+import 'package:exam_connect/widgets/BlurFilter.dart';
+import 'package:exam_connect/widgets/appbar.widget.dart';
+import 'package:exam_connect/widgets/display-box.widget.dart';
+import 'package:exam_connect/widgets/text-widget.dart';
 
 class ArchivedContestPage extends StatefulWidget {
   final String contestName;
@@ -187,7 +187,7 @@ class _ArchivedContestPageState extends State<ArchivedContestPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
-      appBar: GradientAppBar(content: "Archived Contest", appBar: AppBar()),
+      appBar: GradientAppBar(content: "Upcoming Exams", appBar: AppBar()),
       body: Scrollbar(
         child: new ListView(
           children: <Widget>[

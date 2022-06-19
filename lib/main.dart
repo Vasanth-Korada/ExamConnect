@@ -3,30 +3,28 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:talent_connect/classes/UserModel.dart';
-import 'package:talent_connect/firebase_options.dart';
-import 'package:talent_connect/helpers/crud.dart';
-import 'package:talent_connect/pages/announcements-page.dart';
-import 'package:talent_connect/pages/contests-page.dart';
-import 'package:talent_connect/pages/my-activity.page.dart';
-import 'package:talent_connect/pages/mycoins.page.dart';
-import 'package:talent_connect/pages/profile-page.dart';
-import 'package:talent_connect/pages/resources.page.dart';
-import 'package:talent_connect/pages/signin-page.dart';
-import 'package:talent_connect/pages/talent-connect-community.page.dart';
-import 'package:talent_connect/widgets/text-widget.dart';
+import 'package:exam_connect/classes/UserModel.dart';
+import 'package:exam_connect/firebase_options.dart';
+import 'package:exam_connect/helpers/crud.dart';
+import 'package:exam_connect/pages/announcements-page.dart';
+import 'package:exam_connect/pages/contests-page.dart';
+import 'package:exam_connect/pages/my-activity.page.dart';
+import 'package:exam_connect/pages/mycoins.page.dart';
+import 'package:exam_connect/pages/profile-page.dart';
+import 'package:exam_connect/pages/resources.page.dart';
+import 'package:exam_connect/pages/signin-page.dart';
+import 'package:exam_connect/pages/talent-connect-community.page.dart';
+import 'package:exam_connect/widgets/text-widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:firebase_core/firebase_core.dart';
 
-void main()async {
+void main() async {
   await WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform
-  );
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(ChangeNotifierProvider(
     create: (context) => UserModel(),
     child: new MaterialApp(
-      title: "Talent Connect",
+      title: "Exam Connect",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           fontFamily: "GoogleSansRegular",
@@ -192,7 +190,7 @@ class _HomePageState extends State<HomePage> {
                 child: new RaisedButton(
                   onPressed: () async {
                     final url =
-                        "https://play.google.com/store/apps/details?id=com.vktech.talent_connect";
+                        "https://play.google.com/store/apps/details?id=com.vktech.exam_connect";
                     if (await canLaunch(url)) {
                       await launch(
                         url,

@@ -1,12 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:talent_connect/helpers/crud.dart';
-import 'package:talent_connect/pages/aboutus-page.dart';
-import 'package:talent_connect/widgets/text-widget.dart';
+import 'package:exam_connect/helpers/crud.dart';
+import 'package:exam_connect/pages/aboutus-page.dart';
+import 'package:exam_connect/widgets/text-widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class DrawerWidget extends StatefulWidget {
   final String username;
+
   DrawerWidget({@required this.username});
 
   @override
@@ -14,7 +15,7 @@ class DrawerWidget extends StatefulWidget {
 }
 
 class _DrawerWidgetState extends State<DrawerWidget> {
-  String welcomeMessage = "Loading ...";
+  String welcomeMessage = "Welcome to Exam Connect";
   CrudMethods crudObj = new CrudMethods();
 
   @override
@@ -25,7 +26,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
 
   _rateUsLink() async {
     var url =
-        'https://play.google.com/store/apps/details?id=com.vktech.talent_connect';
+        'https://play.google.com/store/apps/details?id=com.vktech.exam_connect';
     if (await canLaunch(url)) {
       await launch(url);
     } else {
@@ -85,8 +86,9 @@ class _DrawerWidgetState extends State<DrawerWidget> {
               child: new ListTile(
                 title: PrimaryTextWidget(
                   content: "Hi " +
-                      widget.username.toString().split(" ")[0] +
-                      " 😃\n$welcomeMessage",
+                          widget.username.toString().split(" ")[0] +
+                          " 😃\n$welcomeMessage" ??
+                      "Welcome to Exam Connect",
                   color: Colors.white,
                   fontSize: 12,
                 ),

@@ -2,11 +2,11 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:talent_connect/classes/UserModel.dart';
-import 'package:talent_connect/helpers/crud.dart';
-import 'package:talent_connect/widgets/appbar.widget.dart';
-import 'package:talent_connect/widgets/display-box.widget.dart';
-import 'package:talent_connect/widgets/text-widget.dart';
+import 'package:exam_connect/classes/UserModel.dart';
+import 'package:exam_connect/helpers/crud.dart';
+import 'package:exam_connect/widgets/appbar.widget.dart';
+import 'package:exam_connect/widgets/display-box.widget.dart';
+import 'package:exam_connect/widgets/text-widget.dart';
 
 import 'activity-quiz-info.page.dart';
 

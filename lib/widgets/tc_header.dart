@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:talent_connect/widgets/text-widget.dart';
+import 'package:exam_connect/widgets/text-widget.dart';
 
 class TCHeader extends StatefulWidget {
   @override
@@ -14,7 +14,7 @@ class _TCHeaderState extends State<TCHeader> {
       child: Column(
         children: [
           HeaderTextFancyWidget(
-            content: "Talent Connect".toUpperCase(),
+            content: "Exam Connect".toUpperCase(),
             fontSize: 32,
           ),
           SizedBox(

@@ -1,4 +1,4 @@
-package com.example.talentconnect
+package com.vktech.studentconnect
 
 import io.flutter.embedding.android.FlutterActivity
 

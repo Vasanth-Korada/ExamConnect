@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:talent_connect/widgets/text-widget.dart';
+import 'package:exam_connect/widgets/text-widget.dart';
 
 class DisplayBox extends StatelessWidget {
   String content;

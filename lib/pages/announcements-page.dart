@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:talent_connect/helpers/check-internet-connection.dart';
-import 'package:talent_connect/helpers/crud.dart';
-import 'package:talent_connect/widgets/appbar.widget.dart';
-import 'package:talent_connect/widgets/drawer.widget.dart';
-import 'package:talent_connect/widgets/text-widget.dart';
+import 'package:exam_connect/helpers/check-internet-connection.dart';
+import 'package:exam_connect/helpers/crud.dart';
+import 'package:exam_connect/widgets/appbar.widget.dart';
+import 'package:exam_connect/widgets/drawer.widget.dart';
+import 'package:exam_connect/widgets/text-widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class AnnouncementsPage extends StatefulWidget {
@@ -60,46 +60,46 @@ class _AnnouncementsPageState extends State<AnnouncementsPage> {
           new SizedBox(
             height: 10,
           ),
-          Container(
-            child: RaisedButton(
-              onPressed: () {
-                _waGroupLink();
-              },
-              splashColor: Colors.green,
-              textColor: Colors.white,
-              padding: const EdgeInsets.all(0.0),
-              child: Container(
-                width: MediaQuery.of(context).size.width - 20,
-                height: 55,
-                decoration: new BoxDecoration(
-                    gradient: new LinearGradient(
-                  colors: [
-                    Color(0xFF04BF00),
-                    Color(0xFF04BF00),
-                  ],
-                )),
-                padding: const EdgeInsets.all(10.0),
-                child: Center(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Container(
-                        height: 30,
-                        child: Image.asset("assets/images/whatsapp-icon.png"),
-                      ),
-                      new SizedBox(
-                        width: 10.0,
-                      ),
-                      HeaderTextWidget(
-                        color: Colors.white,
-                        content: "Join TC Community",
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          ),
+          // Container(
+          //   child: RaisedButton(
+          //     onPressed: () {
+          //       _waGroupLink();
+          //     },
+          //     splashColor: Colors.green,
+          //     textColor: Colors.white,
+          //     padding: const EdgeInsets.all(0.0),
+          //     child: Container(
+          //       width: MediaQuery.of(context).size.width - 20,
+          //       height: 55,
+          //       decoration: new BoxDecoration(
+          //           gradient: new LinearGradient(
+          //         colors: [
+          //           Color(0xFF04BF00),
+          //           Color(0xFF04BF00),
+          //         ],
+          //       )),
+          //       padding: const EdgeInsets.all(10.0),
+          //       child: Center(
+          //         child: Row(
+          //           mainAxisAlignment: MainAxisAlignment.center,
+          //           children: <Widget>[
+          //             Container(
+          //               height: 30,
+          //               child: Image.asset("assets/images/whatsapp-icon.png"),
+          //             ),
+          //             new SizedBox(
+          //               width: 10.0,
+          //             ),
+          //             HeaderTextWidget(
+          //               color: Colors.white,
+          //               content: "Join Exam Connect Community",
+          //             ),
+          //           ],
+          //         ),
+          //       ),
+          //     ),
+          //   ),
+          // ),
           Expanded(
             child: StreamBuilder(
               stream: announcements,

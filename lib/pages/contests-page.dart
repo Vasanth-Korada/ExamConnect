@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:talent_connect/classes/UserModel.dart';
-import 'package:talent_connect/helpers/check-internet-connection.dart';
-import 'package:talent_connect/helpers/crud.dart';
-import 'package:talent_connect/widgets/appbar.widget.dart';
-import 'package:talent_connect/widgets/drawer.widget.dart';
-import 'package:talent_connect/widgets/streambuilder.widget.dart';
-import 'package:talent_connect/widgets/text-widget.dart';
+import 'package:exam_connect/classes/UserModel.dart';
+import 'package:exam_connect/helpers/check-internet-connection.dart';
+import 'package:exam_connect/helpers/crud.dart';
+import 'package:exam_connect/widgets/appbar.widget.dart';
+import 'package:exam_connect/widgets/drawer.widget.dart';
+import 'package:exam_connect/widgets/streambuilder.widget.dart';
+import 'package:exam_connect/widgets/text-widget.dart';
 
 class ContestsPage extends StatefulWidget {
   final Map userObj;
@@ -43,7 +43,7 @@ class _ContestsPageState extends State<ContestsPage> {
     return Scaffold(
       drawer: new DrawerWidget(username: widget.userObj["displayName"]),
       appBar: GradientAppBar(
-        content: "Talent Connect",
+        content: "Exam Connect",
         appBar: AppBar(),
       ),
       body: Column(
@@ -54,7 +54,7 @@ class _ContestsPageState extends State<ContestsPage> {
               Padding(
                 padding: const EdgeInsets.all(12.0),
                 child: new HeaderTextFancyWidget(
-                  content: "Ongoing Contests",
+                  content: "Ongoing Exams",
                 ),
               ),
               new Icon(Icons.arrow_right)
@@ -73,7 +73,7 @@ class _ContestsPageState extends State<ContestsPage> {
               Padding(
                 padding: const EdgeInsets.all(12.0),
                 child: new HeaderTextFancyWidget(
-                  content: "Archived Contests",
+                  content: "Upcoming Exams",
                 ),
               ),
               Row(

@@ -2,9 +2,9 @@ import 'dart:math';
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:talent_connect/helpers/crud.dart';
-import 'package:talent_connect/widgets/appbar.widget.dart';
-import 'package:talent_connect/widgets/text-widget.dart';
+import 'package:exam_connect/helpers/crud.dart';
+import 'package:exam_connect/widgets/appbar.widget.dart';
+import 'package:exam_connect/widgets/text-widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class AboutUS extends StatefulWidget {
@@ -14,10 +14,11 @@ class AboutUS extends StatefulWidget {
 
 class _AboutUSState extends State<AboutUS> {
   CrudMethods crudObj = new CrudMethods();
-  String weblink = "loading";
+  String weblink = "vasanthkorada.netlify.app";
   String appdevImage = "";
   int randomImageNumber;
   final _random = new Random();
+
   int next(int min, int max) => min + _random.nextInt(max - min);
 
   @override
@@ -65,7 +66,7 @@ class _AboutUSState extends State<AboutUS> {
                       child: PrimaryTextWidget(
                         textAlign: TextAlign.center,
                         content:
-                            "Talent Connect is an initiative by Vasanth Korada to help talented people unleash their skills and win prizes.\n\nWe will be hosting different kinds of quizzes or contests targeting multiple audience with your support.",
+                            "Exam Connect is a platform with the ideology to make test taking process easier",
                       ),
                     ),
                     SizedBox(height: 10),

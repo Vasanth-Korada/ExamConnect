@@ -2,13 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:talent_connect/classes/UserModel.dart';
-import 'package:talent_connect/helpers/crud.dart';
-import 'package:talent_connect/pages/signin-page.dart';
-import 'package:talent_connect/widgets/appbar.widget.dart';
+import 'package:exam_connect/classes/UserModel.dart';
+import 'package:exam_connect/helpers/crud.dart';
+import 'package:exam_connect/pages/signin-page.dart';
+import 'package:exam_connect/widgets/appbar.widget.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:talent_connect/widgets/drawer.widget.dart';
-import 'package:talent_connect/widgets/text-widget.dart';
+import 'package:exam_connect/widgets/drawer.widget.dart';
+import 'package:exam_connect/widgets/text-widget.dart';
 import 'package:provider/provider.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -53,10 +53,15 @@ class _ProfilePageState extends State<ProfilePage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
+                    SizedBox(
+                      height: 20,
+                    ),
                     CircleAvatar(
                       backgroundColor: Colors.indigo[200],
                       radius: 70.0,
-                      backgroundImage: NetworkImage(model.userPhoto),
+                      backgroundImage: model.userPhoto.isEmpty
+                          ? AssetImage("assets/images/user.png")
+                          : NetworkImage(model.userPhoto),
                     ),
                     SizedBox(
                       height: 24,

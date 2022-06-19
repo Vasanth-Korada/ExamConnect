@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:provider/provider.dart';
-import 'package:talent_connect/classes/UserModel.dart';
+import 'package:exam_connect/classes/UserModel.dart';
 
 class CrudMethods {
   final FirebaseFirestore _database = FirebaseFirestore.instance;

@@ -3,15 +3,15 @@ import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:talent_connect/classes/UserModel.dart';
-import 'package:talent_connect/helpers/check-internet-connection.dart';
-import 'package:talent_connect/helpers/crud.dart';
-import 'package:talent_connect/pages/exam-page.dart';
-import 'package:talent_connect/helpers/loader.dart';
-import 'package:talent_connect/pages/mycoins.page.dart';
-import 'package:talent_connect/widgets/display-box.widget.dart';
-import 'package:talent_connect/widgets/share.widget.dart';
-import 'package:talent_connect/widgets/text-widget.dart';
+import 'package:exam_connect/classes/UserModel.dart';
+import 'package:exam_connect/helpers/check-internet-connection.dart';
+import 'package:exam_connect/helpers/crud.dart';
+import 'package:exam_connect/pages/exam-page.dart';
+import 'package:exam_connect/helpers/loader.dart';
+import 'package:exam_connect/pages/mycoins.page.dart';
+import 'package:exam_connect/widgets/display-box.widget.dart';
+import 'package:exam_connect/widgets/share.widget.dart';
+import 'package:exam_connect/widgets/text-widget.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'dart:math';
 import '../helpers/ad_manager.dart';
@@ -689,7 +689,7 @@ class _OngoingContestPageState extends State<OngoingContestPage> {
                           onTap: () {
                             share(
                                 title:
-                                    'Hey,\nParticipate in this awesome ${widget.contestInfoObj["exam_name"]} from Talent Connect.',
+                                    'Hey,\nParticipate in this awesome ${widget.contestInfoObj["exam_name"]} from Exam Connect.',
                                 subject:
                                     '${widget.contestInfoObj["exam_name"]}');
                           },
@@ -805,7 +805,7 @@ class _OngoingContestPageState extends State<OngoingContestPage> {
                                                             "3. Note that this is an organisational quiz. Please follow and adhere to the rules given by your organization and attempt the contest accordingly.\n\n"
                                                             "4. Any kind of cheating or other activities will not be entertained and may lead to disqualify your participation as per your organization rules.\n\n"
                                                             "5. Once the timer ends your contest will be auto submitted\n\n"
-                                                            "6. Declaration of contest results is solely responsible by your 'Organisation'. Please note that Talent Connect will not involve in any kind of result modification therefore only involves in providing system generated reports to the organization.\n\n"
+                                                            "6. Declaration of contest results is solely responsible by your 'Organisation'. Please note that Exam Connect will not involve in any kind of result modification therefore only involves in providing system generated reports to the organization.\n\n"
                                                             "7. Please do not try to get out of scope from the app, Doing so your contest will be auto submitted.\n\n"
                                                             "8. Please keep your mobile phone in DND Mode while taking the contest so that your contest will not be auto submitted while receiving a phone call.")
                                                     : new PrimaryTextWidget(
@@ -814,7 +814,7 @@ class _OngoingContestPageState extends State<OngoingContestPage> {
                                                             "2. Make sure you are connected to a stable internet connection before attempting the contest.\n\n"
                                                             "3. Any kinds of cheating or other activities will not be entertained.\n\n"
                                                             "4. Once the timer ends your contest will be auto submitted\n\n"
-                                                            "5. Declaration of contest results is solely responsible to the 'Talent Connect Team'. Results once announced cannot be changed further.\n\n"
+                                                            "5. Declaration of contest results is solely responsible to the 'Exam Connect Team'. Results once announced cannot be changed further.\n\n"
                                                             "6. Please do not try to get out of scope from the app, Doing so your contest will be auto submitted.\n\n"
                                                             "7. Please keep your mobile phone in DND Mode while taking the contest so that your contest will not be auto submitted while receiving a phone call."),
                                                 CheckboxListTile(

@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:talent_connect/widgets/text-widget.dart';
+import 'package:exam_connect/widgets/text-widget.dart';
 
 class BlurFilter extends StatelessWidget {
   final Widget child;
